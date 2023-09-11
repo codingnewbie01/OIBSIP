@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temp Convert</title>
+    <link rel="stylesheet" href="/Temp_Converter/temp_convert.css">
 </head>
 <body>
-    <h1>Temperature Converter</h1>
+    <div id="container">
+        <div class="subContainer">
+            <h2>TAAP-PARIVARTAK</h2>
+            <div id="inputs">
+                <div class="input2">
+                    <label for="">Convert From</label>
+                    <input list="Type" class="type">
+                    <datalist id="Type">
+                        <option value="Celcius">
+                        <option value="Fehrenheit">
+                        <option value="Kelvin">
+                    </datalist>
+                </div>
+                <div class="input1">
+                    <label for="">Degree</label><input type="text" class="degree">
+                </div>
+            </div>
+            <div id="inputs">
+                <div class="input2">
+                    <label for="">Convert To</label>
+                    <input list="Type" class="type">
+                    <datalist id="Type">
+                        <option value="Celcius">
+                        <option value="Fehrenheit">
+                        <option value="Kelvin">
+                    </datalist>
+                </div>
+                <div class="input1">
+                    <label for="">Result</label>
+                    <input type="text" class="degree" readonly>
+                </div>
+            </div>
+
+            <!-- <div id="result">
+                <label for="">PARIVARTIT TAAPMAN</label><input type="text" class="result">
+
+            </div> -->
+            <div class="button">
+                <button id="convert">CONVERT</button>
+                <button id="clear">CLEAR</button>
+            </div>
+        </div>
+    </div>
+    <script src="/Temp_Converter/temp_convert.js"></script>
 </body>
 </html>
