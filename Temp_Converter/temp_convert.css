@@ -58,7 +58,7 @@ label{
     background: none;
     outline: none;
 }
-.degree, .type, .result{
+.deg1, .deg2, .unit1, .unit2{
     border: none;
     border-bottom: 1px solid rgb(224, 218, 218);
 }
