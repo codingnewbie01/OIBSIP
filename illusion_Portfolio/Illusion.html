@@ -17,17 +17,17 @@
 </head>
 <body>
 
-  <nav id="navbar">
-    <div class="subNavBar">
-      <a href="#aboutMe">About Me</a>
-      <a href="#mainEdu">My Education</a>
-      <a href="#skills">My Skills</a>
-      <a href="#projectSect">Projects</a>
-    </div>
-  </nav>
+  
 
   <div id="nav_about">
-
+    <nav id="navbar">
+      <div class="subNavBar">
+        <a href="#gtk">About Me</a>
+        <a href="#mainEdu">My Education</a>
+        <a href="#skills">My Skills</a>
+        <a href="#project">Projects</a>
+      </div>
+    </nav>
     
     <!-- --------------ABOUT ME--------------- -->
     <section id="aboutMe">
@@ -39,71 +39,106 @@
             <p>An aspiring <span class="title">Front-End Developer</span></p>
           </div>
           <div class="log-sign">
-            <button class="logIn LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+            <a href="https://www.linkedin.com/in/arvind-verma-5061a3228" target="_blank"><button class="logIn LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button></a>
             
             <button class="logIn"><i class="fa-brands fa-twitter"></i></button>
-            <button class="logIn"><i class="fa-brands fa-github"></i></button>
+            <a href="https://github.com/codingnewbie01" target="_blank"><button class="logIn"><i class="fa-brands fa-github"></i></button></a>
+            
             <button class="logIn"><i class="fa-brands fa-instagram"></i></button>
             <!-- <button class="signUp">Hire Me</button> -->
           </div>
-          <p class="summary">I'm a hard working college fresh graduate, willing to make my career into IT indusrty where I can implement my technical and logical skills and can learn new technologies from there. </p>
-        </div>
+          <div id="cv_hire">
+            <a href="cv"><button>Download CV</button></a>
+            <a href="hire"><button>Hire me!</button></a>
+          </div>
 
+        </div>
+        
         <div class="img">
           <img src="/illusion_Portfolio/IMG_20230409_212638_785-removebg-preview.png" alt="" class="dp1">
         </div>
       </div>
     </section>
   </div>  
-
-      <!-- --------------EDUCATION--------------- -->
-      <div id="mainEdu">
-        <div class="edu1">
-          <h1>Education Details</h1>
-        </div>
-        <div class="edu2">
-          <div class="btech">
-            <h2>B.Tech (ECE)</h2>
-            <p>Ganga Institue of Technology & Management, Kablana, Haryana</p>
-            <!-- <p>Percentage: 71.5</p> -->
-          </div>
-          <div class="twelveth">
-            <h2>12<sup>th</sup></h2>
-            <p>GPS Inter College, Gonda, Uttar Pradesh</p>
-          </div>
-          <div class="tenth">
-            <h2>10<sup>th</sup></h2>
-            <p>GPS Inter College, Gonda, Uttar Pradesh</p>
-
-          </div>
-        </div>
-
+  
+  <!-- --------------Get to Know More ABOUT Me--------------- -->
+  <div id="gtk">
+    <div id="sub_gtk">
+      <div class="sub_gtk1">
+        <p style="color:rgb(168, 164, 164)">Get To Know More</p>
+        <h1 style="font-size: 45px;">About Me</h1>
       </div>
+      <div class="sub_gtk2">
+        <div class="sub_gtk2_img">
+          <img src="/illusion_Portfolio/image.jpg" alt="">
+        </div>
+        <div class="sub_gtk2_about">
+          <div class="edu">
+            <div>
+              <h2>B.Tech (ECE)</h2>
+              <p>GITAM</p>
+              <p>Jhajjar, Haryana</p>
+            </div>
+            <div>
+              <h2>12<sup>th</sup></h2>
+              <p>GPS Inter College</p>
+              <p>Gonda, U.P.</p>
+            </div>
+            <div>
+              <h2>10<sup>th</sup></h2>
+              <p>GPS Inter College</p>
+              <p>Gonda, U.P.</p>
+            </div>
+          </div>
+          <p class="summary">I'm a Detail-oriented and ambitious college graduate, willing to make my career into Front-End Development where I can implement my technical and logical skills. Proficient JavaScript, CSS, HTML, with a strong foundation in Web Technologies. Eager to learn and grow in a fast-paced environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
       <!-- --------------SKILLS--------------- -->
       <div id="skills">
-        <h1>#Skills</h1>
-
+        <div class="skill_head">
+          <p>Explore My</p>
+          <h1>Skills</h1>
+        </div>
+        <div class="skill_container">
+          <div class="js">
+            <i class="fa-brands fa-square-js"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="css">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="html">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="java">
+            <i class="fa-brands fa-java"></i>
+            <p>Core Java</p>
+          </div>
+          <div class="tailwind">
+            <img src="/illusion_Portfolio/tailwind_css-removebg-preview.png" alt="">
+            <p>TailwindCSS</p>
+          </div>
+          <div class="sql">
+            <i class="fa-solid fa-database"></i>
+            <p>Basic SQL</p>
+          </div>
+          <div class="git_github">
+            <i class="fa-brands fa-square-github"></i>
+            <p>Git/Github</p>
+          </div>
+        </div>
       </div>
 
   <!-- --------------Project Section--------------- -->
 
-      <div id="projectSect">
-        <div id="JioClone" class="projectCard">
-          <a href="">
-            <img src="/jio.png" alt="JioClone">
-          </a>
-          <h3>JioClone</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, in sunt. Dolor ex ducimus ut repudiandae amet vero aliquid vel nisi quam iusto laboriosam repellendus fugit doloremque sequi, error ab.</p>
-        </div>
-        <div id="project2" class="projectCard"></div>
-        <div id="project3" class="projectCard"></div>
-        <div id="Calc" class="projectCard">
-          <a href="">
-            <img src="/calc.png" alt="Calculator">
-          </a>
-          <h3>Calculator</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, in sunt. Dolor ex ducimus ut repudiandae amet vero aliquid vel nisi quam iusto laboriosam repellendus fugit doloremque sequi, error ab.</p>
-        </div>
+      <div id="project">
+        
       </div>
 
   <footer>
