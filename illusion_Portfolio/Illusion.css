@@ -35,7 +35,7 @@ body{
 }
 #navbar{
     height: 50px;
-    width: 100%;
+    /* width: 90%; */
     display: flex;
     /* position: sticky;
     top: 0; */
@@ -50,7 +50,7 @@ body{
     border: .1px solid rgb(218, 218, 208);
     background-color: #ffffff2d;
     border-radius: 10px;
-    width: 50%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -293,46 +293,237 @@ body{
 
 /* ----------------Skills----------------- */
 
-#skills{
+#skill{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
-    height: 100vh;
-    border: 2px solid rgb(81, 30, 199);
     width: 100%;
-    color: black;
+    height:600px;
+    /* border: 2px solid red; */
+    color: #000;
+    
 }
-.skill_head{
+#skill i{
+    font-size: 100px;
+}
+#sd1{
+    width: 85%;
+    /* height: 4%; */
+    /* border: 2px solid blue; */
+    padding-bottom: 40px;
     text-align: center;
 }
-.skill_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+#sd1 h1{
+    font-size: 45px;
+    color: #000000;
 }
-.skill_container div{
+#sd2{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    width: 85%;
+    height: 49%;
+}
+#sd3{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    width: 85%;
+    height: 49%;
+}
+/* #sd2 div,#sd3 div{
+    width: 33%;
+    height: 100%;
+    border: 2px solid black;
+    
+} */
+#sd2 h1,#sd3 h1{
+    text-align: center;
+    color: #585656;
+    font-size: 25px;
+    /* height: 10%; */
+    /* border: 2px solid red; */
+}
+.sd21{
+    border: 1.5px solid rgb(173, 170, 170);
+    border-radius: 20px;
+    height: 77.5%;
+    width: 35%;
+}
+.sd22{
+    height: 100%;
+    width: 35%;
+}
+.lang,.vcs{
+    /* border: 2px solid black; */
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    /* height: 100%; */
+}
+.js_java, .git-github{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+}
+.web{
+    border: 1.5px solid rgb(173, 170, 170);
+    border-radius: 20px;
+    /* border: 2px solid green; */
+    height: 130%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.html-css-tw{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:80%;
+    width: 100%;
+    /* border: 2px solid palevioletred; */
+}
+
+.html_css{
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.skill_container i{
-    font-size: 75px;
+.tailwind,.html, .css,.git,.github{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tailwind img{
+    height: 60px;
+    width: 120px;
+}
+#sd3{
+    display: flex;
+    /* align-items: end; */
+    justify-content: end;
+}
+.sd3{
+    border: 1.5px solid rgb(173, 170, 170);
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    height: 80%;
+    width: 35%;
+    margin-right: 80px;
+    margin-top: -20px;
 }
 
-.tailwind img{
-    width: 40px;
-    height: 25px;
-}
+
 
 
 /* -----------Projects------------- */
 
 #project{
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    border: 2px solid red;
-    height: 500px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    color: #000;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 1100px;
     width: 100%;
+    
+}
+
+#Jio_clone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 45%;
+    /* border: 2px solid red; */
+    border: 1.5px solid rgba(207, 203, 203, 0.831);
+    border-radius: 20px;
+}
+
+#Jio_clone div,#Zomaito div {
+    /* border: 1.5px solid rgba(207, 203, 203, 0.831); */
+    /* border-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    width: 100%;
+    height: 80%;
+}
+
+.Jio_clone{
+    background-image: url(/illusion_Portfolio/jio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#project button{
+    font-size: 16px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background: none;
+    margin-bottom: 5px;
+}
+
+#project button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(48, 47, 47);
+    
+}
+.Zomaito{
+    
+    background-image: url(/illusion_Portfolio/zomaito.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#Zomaito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 43%;
+    /* border: 2px solid red; */
+    border: 1.5px solid rgba(207, 203, 203, 0.831);
+    border-radius: 20px;
+}
+
+#arrowDiv{
+    /* position: relative; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    /* border: 2px solid red; */
+}
+.arrow{
+    position: sticky;
+
+    top:101vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    height: 100%;
+    width: 50px;
+    border-radius: 50%;
+    /* background-color: #000; */
+    margin-right: 10px;
+    /* transform: rotate(90deg); */
 }
